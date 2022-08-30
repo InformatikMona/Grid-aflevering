@@ -1,4 +1,35 @@
 .grid-container{
     display: grid;
-    grid-template-columns: 100px 200 px;
+    grid-template-areas:
+     "blå grøn grøn"
+     "gul gul rød"
+     "lilla lyseblå rød"    
 }
+/* I denne kodning er der sørget for at opdele de 6 grids jeg har lavet, da de har forskellige størrelser.
+     Der bliver altså sørget for den givne grids bredde, størrelse og højde */
+     
+.grid-item-1{
+    grid-area: blå;
+    background-color: #2573d9;
+}
+.grid-item-2{
+    grid-area: grøn;
+    background-color: #5dbf17;
+}
+.grid-item-3{
+    grid-area: gul;
+    background-color: #f29f05;
+}
+.grid-item-4{
+    grid-area: rød;
+    background-color: #f21905;
+}
+.grid-item-5{
+    grid-area: lilla;
+    background-color: #a33fbf;
+}
+.grid-item-6{
+    grid-area: lyseblå;
+    background-color: #3d90d9;
+}
+/* I kodningen fra 10-33 har jeg givet de forskellige grids/kolonner farver. */

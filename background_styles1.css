@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: black;
+  height: 98%;
+  margin: 0;
+}
+/* Her er der sørget for at baggrunden på hjemmesiden/forsiden er sort. Og hvor høj højden er fra kolonnerne ud til siderne. */
+
+.grid-container {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+/* Her har jeg ændret på padding som er størrelsen af kolonnerne. Og ændret på størrelsen og højden for at få det til at
+fylde mest muligt på siden.  */
+
+.grid-item {
+  position: relative;
+  padding: 108px;
+  color: white;
+  border: 3px solid black;
+}
+/* Her er padding sat til 108px for at kunne bestemme hvor størrelsen af kolonnerne. 
+Der er også ændret på teksten i kolonnerne.
+Der er ændret på størrelsen mellem kolonnerne ved at bruge koden/kommandoen "border" */
+
+.grid-item::before {
+  content: 'Steffen og Ingrid er seje :)';
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  left: 15px;
+}
+/* Her er der skrevet identisk tekst i alle kolonnerne. 
+Der er ændret på teksten position for at få det til at stå i toppen til venstre.
+Størrelsen på teksten er sat til 25px.
+Placeringen af teksten i kolonnerne er sat til top 10px og left 15px, for at få en præcis placering. */
